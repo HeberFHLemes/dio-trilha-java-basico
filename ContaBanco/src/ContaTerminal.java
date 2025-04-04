@@ -1,19 +1,28 @@
-// import java.util.Scanner;
+import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        // TODO: Conhecer e importar a classe Scanner
+        System.out.println("Seja bem vindo ao Banco DIO!");
 
+        System.out.println("Para cadastrar uma nova conta, responda às perguntas a seguir.");
 
+        try (Scanner scanner = new Scanner(System.in)){
+            System.out.println("\nDigite o seu nome completo: ");
+            String nome = scanner.nextLine().toUpperCase();
 
-        // TODO: Exibir as mensagens para o nosso usuário
+            System.out.println("Digite o número da agência: ");
+            String agencia = scanner.nextLine();
 
+            System.out.println("Por favor, digite o número da Agência: ");
+            int numero = Integer.parseInt(scanner.nextLine());
 
+            System.out.println("Por último, insira o valor do saldo inicial da sua nova conta: ");
+            double saldo = Double.parseDouble(scanner.nextLine());
 
-        // TODO: Obter inputs pela classe Scanner, os valores digitados no terminal
-
-
-
-        // TODO: Exibir mensagem final
+            System.out.println("\nOlá " + nome 
+                + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia 
+                + ", conta " + numero 
+                + " e seu saldo " + saldo + " já está disponível para saque. \n");
+        }
     }
 }
