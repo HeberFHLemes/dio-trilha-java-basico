@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ContaTerminal {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println("Seja bem vindo ao Banco DIO!");
 
         System.out.println("Para cadastrar uma nova conta, responda às perguntas a seguir.");
@@ -13,7 +13,7 @@ public class ContaTerminal {
             System.out.println("Digite o número da agência: ");
             String agencia = scanner.nextLine();
 
-            System.out.println("Por favor, digite o número da Agência: ");
+            System.out.println("Por favor, digite o número da conta: ");
             int numero = Integer.parseInt(scanner.nextLine());
 
             System.out.println("Por último, insira o valor do saldo inicial da sua nova conta: ");
